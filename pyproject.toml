@@ -17,9 +17,13 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 
+[project.scripts]
+koan = "commonprompt_koan.main:koan"
+
+
 [tool.poetry]
 packages = [
-    {include = "commonprompt-koan"}
+    {include = "commonprompt_koan"}
 ]
 
 
