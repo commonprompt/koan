@@ -32,10 +32,11 @@ jobs:
           path: dist/
 
   publish-to-pypi:
-    name: >-
-      Publish Python 🐍 distribution 📦 to PyPI
+    name: Publish Python 🐍 distribution 📦 to PyPI
     needs:
-      - publish-to-testpypi
+      - build
+    # needs:
+    #   - publish-to-testpypi
     runs-on: ubuntu-latest
     environment:
       name: pypi
