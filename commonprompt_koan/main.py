@@ -4,10 +4,10 @@ import click
 
 
 @click.command()
-def hello_world() -> None:
+def koan() -> None:
     """Print hello world."""
     print("Hello World!")
 
 
 if __name__ == "__main__":
-    hello_world()
+    koan()
